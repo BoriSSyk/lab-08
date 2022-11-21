@@ -1,7 +1,5 @@
-from random import shuffle
 import numpy as np
-n = int(input('Количество степеней: '))
-np.array(n)
-arr = [3 ** (i + 1) for i in range(n)]
-shuffle(arr)
-print(arr)
+a = np.array([i**3 for i in range(-9, 11)]).reshape((5, 4))
+print(a, '\n')
+np.random.shuffle(a)
+print(a)
